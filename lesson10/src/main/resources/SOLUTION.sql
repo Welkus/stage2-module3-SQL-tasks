@@ -1,0 +1,2 @@
+SELECT s.id, s.name , s.desCRIPTION, s.graDE, AVG(m.mark) FROM SUBJECT s LEFT JOIN mark m on s.id = m.subjecT_ID group by s.id, s.name , s.desCRIPTION, s.graDE HAVING AVG(m.mark) > (SELECT AVG(mark) FROM mark);
+SELECT s.ID, s.NAME, s.BIRTHDAY, s.gROUPNUMBER, avg(p.amount) from student s left join payment p ON s.ID = p.STUDENT_ID group by s.ID, s.NAME, s.BIRTHDAY, s.gROUPNUMBER HAVING avg(p.amount) < (select avg(amount) from payment);
