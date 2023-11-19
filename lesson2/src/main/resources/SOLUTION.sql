@@ -1,5 +1,5 @@
 INSERT INTO student (name, birthday, groupnumber) values ('John', '2000-01-01',1),('Chris', '2000-03-03',1),('Carl', '2000-05-05',1),('Oliver', '2001-01-01',2),('James', '2001-04-04',2),('Lucas', '2001-07-07',2),('Jacob', '2002-12-07',3),('Logan', '2002-08-07',3),('Tim', '2003-09-07',4),('Ron', '2003-03-27',4),('Harry', '2004-06-22',5),('Homer', '2004-03-11',5),('Lisa', '2004-11-07',14);
 INSERT INTO Subject (name, grade) values('Art',1), ('Music',1), ('Geography',2), ('History',2), ('PE',3), ('Math', 3), ('Science',4), ('IT',4), ('English', 5), ('German',5);
-INSERT INTO paymenttype (id, name) values (1,'DAILY'), (2,'WEEKLY'), (3,'MONTHLY');
-INSERT INTO PAYMENT (id, type_id, amount, student_id, payment_date) values(1,2,30,1,'2001-01-01'), (2,3,25,4,'2002-01-12'), (3,2,50,7,'2003-02-14'), (4,1,10,5,'2002-01-30');
-INSERT INTO MARK (id,student_id, subject_id, mark) values(1,2,1,8), (2,4,4,5), (3,5,3,9), (8,6,4), (4,9,5,9 ), (5,2,8,5), (6,3,9,10), (7,6,7,7), (8,7,2,4);
+INSERT INTO paymenttype (name) values ('DAILY'), ('WEEKLY'), ('MONTHLY');
+INSERT INTO PAYMENT (type_id, amount, student_id, payment_date) values(2,30,1,'2001-01-01'), (3,25,4,'2002-01-12'), (2,50,7,'2003-02-14'), (1,10,5,'2002-01-30');
+INSERT INTO MARK (student_id, subject_id, mark) values(2,1,8), (4,4,5), (5,3,9), (8,6,4), (9,5,9 ), (2,8,5), (3,9,10), (6,7,7), (7,2,4);
