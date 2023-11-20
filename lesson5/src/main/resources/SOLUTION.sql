@@ -1,5 +1,4 @@
 SELECT * FROM payment WHERE amount >= 500;
-SELECT * FROM STUDENT WHERE birthday >= '2003-01-01';
 SELECT * FROM STUDENT WHERE birthday<= DATEADD(year, -20, current_date);
 SELECT * FROM STUDENT WHERE birthday>= DATEADD(year, -20, current_date) AND groupnumber = 10;
 SELECT * FROM STUDENT WHERE name LIKE 'Mike%' OR groupnumber BETWEEN 4 AND 6;
